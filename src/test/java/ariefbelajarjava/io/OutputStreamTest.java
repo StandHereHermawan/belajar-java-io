@@ -17,8 +17,8 @@ public class OutputStreamTest {
                 stream.write("Hello World\n".getBytes());
                 stream.flush();
             }
-        } catch (IOException e) {
-            Assertions.fail(e);
+        } catch (IOException exception) {
+            Assertions.fail(exception);
         }
     }
 }
